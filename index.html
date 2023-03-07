@@ -1,12 +1,537 @@
-<!DOCTYPE html>
+<!--
+    Created By : @yash
+                 3/5/2023 , Sunday
+                 10:14 AM
+    Project :myProfileScratch
+    Contact: contact.yashen@gmail.com
+-->
+
+
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Yashen Fernando"/>
+    <meta name="description"
+          content="I am a software engineer with experience in full-stack development, web development,
+          mobile app development, cloud computing, and DevOps. Visit my portfolio website to see my work and learn more
+          about my skills."
+    />
+    <meta
+            property="og:image"
+            content="https://drive.google.com/file/d/1tkuGKjLRE2NIRHu4QKJBv0_SSkqvxxW8/view?usp=share_link"
+    />
+    <meta
+            property="og:description"
+            content="I am a software engineer with experience in full-stack development, web development,
+          mobile app development, cloud computing, and DevOps. Visit my portfolio website to see my work and learn more
+          about my skills."
+    />
+    <meta property="og:title" content="Yashen Fernando - FullStack Software Engineer"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Yashen Fernando</title>
 </head>
+
 <body>
-    <h1>Hello world</h1>
+
+<!----------------------------------------- Header -------------------------------------------------------------------->
+
+<header><!-- ========== Header =============== -->
+    <div class="site-logo"><!--Logo-->
+        <a href="#" class="site-logo-anchor">
+            <img src="./assets/img/logo-main.png" alt="Logo Image" width="150px">
+        </a>
+    </div>
+
+    <nav><!--nav-bar-->
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#aboutMe" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#whatIDo" class="nav-link">What I Do</a>
+            </li>
+            <li class="nav-item">
+                <a href="#academic" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+                <a href="#mySkills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a href="#myProjects" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contactMe" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="my-resume-btn">
+        <a href="./assets/docs/01.pdf" download="Yashen-Fernando-Resume.pdf" class="download-resume-btn">
+            My Resume
+            <!--<button class="download-resume-btn">My Resume</button>-->
+        </a>
+    </div>
+</header><!-- ========X==== Header ============X====== -->
+
+<!------------------------------------------ Main --------------------------------------------------------------------->
+
+<main><!-- =========== Main Area ========== -->
+
+    <section class="home" id="home"><!--============= Home Page ============-->
+        <div class="home-main-heading-box">
+            <h1 class="home-main-box-heading">
+                Hey There , <br>
+                I’m Yashen Fernando <br>
+                <span class="home-main-box-heading-a">a</span>
+                <span class="home-main-box-heading-jobTitle">Full stack Engineer</span>
+                <!-- both are in same line-->
+            </h1>
+
+            <p class="home-main-box-description">
+                i am passionate to work with new technologies and i'm try to always uptodate
+            </p>
+        </div>
+        <a href="tel:+94711974973">
+            call to me
+        </a>
+    </section><!--=====X======== Home Page =======X=====-->
+
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <section class="aboutMe" id="aboutMe"><!--============== About Me ================-->
+
+        <div class="aboutMe-left-side">
+            <div class="aboutMe-profilePic-outer">
+                <div class="aboutMe-profilePic-inner">
+                    <img src="./assets/img/profile-pic.png" alt="profile picture" class="profilePic" width="250px">
+                </div>
+            </div>
+            <div class="aboutMe-socialMediaLink-list">
+                <div class="aboutMe-socialMediaLink">
+                    <a href="#"><i class="#"></i></a>
+                </div>
+                <div class="aboutMe-socialMediaLink">
+                    <a href="#"><i class="#"></i></a>
+                </div>
+                <div class="aboutMe-socialMediaLink">
+                    <a href="#"><i class="#"></i></a>
+                </div>
+                <div class="aboutMe-socialMediaLink">
+                    <a href="#"><i class="#"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutMe-right-side">
+            <div class="aboutMe-right-side-name">
+                <h2>Hi ' I'm Yashen</h2>
+            </div>
+            <div class="aboutMe-right-side-description">
+                As a student at the Institute of Software Engineering (IJSE), I am dedicated to mastering the art of
+                software development. My expertise encompasses a wide range of technical skills including Java
+                programming, database management systems, architectural and design patterns, and UI/UX design. I am
+                particularly passionate about the cutting-edge field of web and mobile app development and Artificial
+                Intelligence, and am always looking for new opportunities to grow and innovate in these areas. I am a
+                firm believer in the power of continuous learning and am excited to bring my skills, passion and
+                enthusiasm to a forward-thinking organization.
+            </div>
+            <div class="aboutMe-right-side-myBlogBtn">
+                <a href="yashenfernando.blogspot.com">My Blog</a>
+            </div>
+        </div>
+    </section><!--======X======= About Me ======X=========-->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <section class="whatIDo" id="whatIDo"><!--============== About Me ================-->
+        <h1 class="whatIDo-heading">
+            <span class="what">What</span>
+            <span class="i-do">I Do</span>
+        </h1>
+
+        <div class="whatIDo-slider-container">
+            <div class="whatIDo-slider-wrapper">
+
+                <div class="whatIDo-slider-item">  <!--standalone application dev-->
+                    <div class="whatIDo-slider-item-image">
+                        <i class="bx #"></i>
+                    </div>
+                    <div class="whatIDO-slider-item-textBox">
+                        <h4 class="whatIDO-slider-item-textBox-heading">Standalone Application</h4>
+                        <h6 class="whatIDO-slider-item-textBox-experience">9 Month Experience</h6>
+                        <h6 class="whatIDO-slider-item-textBox-completedProjects">6+ Projects Completed</h6>
+                    </div>
+                </div>
+
+                <div class="whatIDo-slider-item">  <!--web application dev-->
+                    <div class="whatIDo-slider-item-image">
+                        <i class="bx #"></i>
+                    </div>
+                    <div class="whatIDO-slider-item-textBox">
+                        <h4 class="whatIDO-slider-item-textBox-heading">Web Application Development</h4>
+                        <h6 class="whatIDO-slider-item-textBox-experience">1.5 Month Experience</h6>
+                        <h6 class="whatIDO-slider-item-textBox-completedProjects">3+ Projects Compleated</h6>
+                    </div>
+                </div>
+
+                <div class="whatIDo-slider-item">  <!--mobile application dev-->
+                    <div class="whatIDo-slider-item-image">
+                        <i class="bx #"></i>
+                    </div>
+                    <div class="whatIDO-slider-item-textBox">
+                        <h4 class="whatIDO-slider-item-textBox-heading">Mobile Application Development</h4>
+                        <h6 class="whatIDO-slider-item-textBox-experience">1 Month Experience</h6>
+                        <h6 class="whatIDO-slider-item-textBox-completedProjects">2+ Projects Compleated</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!--======X======= About Me ======X=========-->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <section class="academic" id="academic"><!--============== About Me ================-->
+        <div class="academic-page-wrapper">
+            <div class="academic-row"><!--degree-->
+                <div class="academic-row-leftBox">
+                    <h3 class="academic-title">BSc (Hons) Computer Science</h3>
+                    <h5 class="academic-institute">University Of Bolton</h5>
+                    <h6 class="academic-year">2024 - 2026</h6>
+                </div>
+                <div class="academic-row-centerBox">
+                    <div class="academic-icon-outer">
+                        <div class="academic-icon-inner">
+                            <i class="#"></i>
+                        </div>
+                    </div>
+                    <div class="doted-line"></div>
+                </div>
+                <div class="academic-row-rightBox">
+                    <p class="academic-description">Anticipating completion of Higher National Diploma (HND) in Software
+                        engineering in 2024, followed by pursuing a top-up degree in Computer Science from the
+                        University of Bolton, starting in2024.</p>
+                </div>
+            </div>
+
+            <div class="academic-row"><!--diploma-->
+                <div class="academic-row-leftBox">
+                    <h3 class="academic-title">Graduate Diploma in Software <br> Engineering</h3>
+                    <h5 class="academic-institute">Institute of Software Engineering</h5>
+                    <h6 class="academic-year">2022 - 2024</h6>
+                </div>
+                <div class="academic-row-centerBox">
+                    <div class="academic-icon-outer">
+                        <div class="academic-icon-inner">
+                            <i class="#"></i>
+                        </div>
+                    </div>
+                    <div class="doted-line"></div>
+                </div>
+                <div class="academic-row-rightBox">
+                    <p class="academic-description">The program covers a wide range of topics, including software
+                        development methodologies, programming languages, web and mobile application development,
+                        database design and management, software quality assurance, and project management. The
+                        curriculum is regularly updated to keep up with the latest industry trends and technologies,
+                        ensuring that students are always learning the most up-to-date skills. </p>
+                </div>
+            </div>
+
+            <div class="academic-row"><!--school-->
+                <div class="academic-row-leftBox">
+                    <h3 class="academic-title">GCE Advanced Level and GCE <br> Ordinary Level</h3>
+                    <h5 class="academic-institute">Ananda Sastralaya - Matugama</h5>
+                    <h6 class="academic-year">2009 - 2022</h6>
+                </div>
+                <div class="academic-row-centerBox">
+                    <div class="academic-icon-outer">
+                        <div class="academic-icon-inner">
+                            <i class="#"></i>
+                        </div>
+                    </div>
+                    <div class="doted-line"></div>
+                </div>
+                <div class="academic-row-rightBox">
+                    <p class="academic-description">As an advanced level student in the technology stream, my school
+                        life involves studying subjects such as Science for Technology, Engineering Technology, and
+                        Information and Communication Technology. In this level, I have also started learning
+                        programming, networking, designs, mechanical engineering, and electrical and electronics, which
+                        are essential components in the field of technology.</p>
+                </div>
+            </div>
+        </div>
+    </section><!--=====X======== About Me =======X========-->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+
+    <section class="mySkills" id="mySkills"><!--============== My Skills ================-->
+        <h2 class="mySkills-heading">
+            <span class="mySkills-heading-my">My</span>
+            <span class="mySkills-heading-techStack">Tech Stack</span>
+        </h2>
+        <div class="mySkills-slider-container">
+
+            <div class="mySkills-slider-item-outer"><!--frontend technologies-->
+                <div class="mySkills-slider-item-inner">
+                    <div class="mySkills-slider-item-image">
+                        <img src="./assets/img/fe.jpg" alt="my skills image" width="250px">
+                    </div>
+                    <div class="mySkills-slider-item-skillsBox">
+                        <div class="mySkills-slider-item-skillsBox-left">
+                            <h6 class="mySkills-slider-item-skills-text">Html</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Css</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Javascript</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Typescript</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Bootstrap</h6>
+                            <h6 class="mySkills-slider-item-skills-text">JQuery</h6>
+                        </div>
+                        <div class="mySkills-slider-item-skillsBox-right">
+                            <h6 class="mySkills-slider-item-skills-text">React</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Angular</h6>
+                            <h6 class="mySkills-slider-item-skills-text">React-Native</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Flutter</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Tailwind</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySkills-slider-item-outer"><!--backend technologies-->
+                <div class="mySkills-slider-item-inner">
+                    <div class="mySkills-slider-item-image">
+                        <img src="./assets/img/be.jpg" alt="my skills image" width="250px">
+                    </div>
+                    <div class="mySkills-slider-item-skillsBox">
+                        <div class="mySkills-slider-item-skillsBox-left">
+                            <h6 class="mySkills-slider-item-skills-text">Java</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Python</h6>
+                            <h6 class="mySkills-slider-item-skills-text">SpringBoot</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Django</h6>
+                            <h6 class="mySkills-slider-item-skills-text">AWS</h6>
+                        </div>
+                        <div class="mySkills-slider-item-skillsBox-right">
+                            <h6 class="mySkills-slider-item-skills-text">MySql</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Mongo DB</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Node-Express</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Firebase</h6>
+                            <h6 class="mySkills-slider-item-skills-text">GCP</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySkills-slider-item-outer"><!--tools technologies-->
+                <div class="mySkills-slider-item-inner">
+                    <div class="mySkills-slider-item-image">
+                        <img src="./assets/img/tools.jpg" alt="my skills image" width="250px">
+                    </div>
+                    <div class="mySkills-slider-item-skillsBox">
+                        <div class="mySkills-slider-item-skillsBox-left">
+                            <h6 class="mySkills-slider-item-skills-text">Wordpress</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Git-vcs</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Npm-Mvn</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Postman</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Swagger</h6>
+                        </div>
+                        <div class="mySkills-slider-item-skillsBox-right">
+                            <h6 class="mySkills-slider-item-skills-text">Figma</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Gimp</h6>
+                            <h6 class="mySkills-slider-item-skills-text">ClickUp</h6>
+                            <h6 class="mySkills-slider-item-skills-text">SEO</h6>
+                            <h6 class="mySkills-slider-item-skills-text">Xampp</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!--======X======= My Skills ======X========-->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+
+    <section class="myProjects" id="myProjects"><!--============== My Projects ================-->
+        <h2 class="myProject-Heading">
+            <span class="myProject-Heading-my">My</span>
+            <span class="myProject-Heading-project">Project</span>
+        </h2>
+        <div class="myProjects-container">
+            <div class="myProjects-item-wrapper"><!--project 01-->
+                <div class="myProjects-item-image">
+                    <img src="./assets/img/html-css-site.png" alt="my project image" width="250px">
+                </div>
+                <div class="myProjects-item-descriptionBox">
+                    <h2 class="myProjects-item-heading">
+                        Static Website HTML | CSS
+                    </h2>
+                    <p class="myProjects-item-description">
+                        Project "Royal Hotel" is a hotel website created using HTML and CSS. It's my first web design
+                        project and
+                        I'm excited to showcase the hotel's features and amenities to potential guests. The website
+                        features information about the hotel, a photo gallery, a booking form, information about nearby
+                        attractions, and contact information.
+                    </p>
+                    <a href="#" class="myProjects-item-btn">
+                        <button>Open Via Github</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="myProjects-item-wrapper"><!--project 01-->
+                <div class="myProjects-item-image">
+                    <img src="./assets/img/standalone.png" alt="my project image" width="250px">
+                </div>
+                <div class="myProjects-item-descriptionBox">
+                    <h2 class="myProjects-item-heading">
+                        Standalone Application
+                    </h2>
+                    <p class="myProjects-item-description">
+                        Project "E-Pos" is a standalone POS system, built with Java, MySQL, OOP, layered architecture,
+                        and Jasper Report for customizable reports. It handles various transactions and inventory
+                        management securely and efficiently
+                    </p>
+                    <a href="#" class="myProjects-item-btn">
+                        <button>Open Via Github</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="myProjects-item-wrapper"><!--project 01-->
+                <div class="myProjects-item-image">
+                    <img src="./assets/img/react-project.png" alt="my project image" width="250px">
+                </div>
+                <div class="myProjects-item-descriptionBox">
+                    <h2 class="myProjects-item-heading">
+                        Facebook Clone
+                    </h2>
+                    <p class="myProjects-item-description">
+                        I've learned JavaScript arrow functions, npm, React components, and basic React concepts. Arrow
+                        functions help write efficient code, npm makes package management easier, and React components
+                        enable modularity and code usability.
+                    </p>
+                    <a href="#" class="myProjects-item-btn">
+                        <button>Open Via Github</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><!--======X======= My Projects ======X========-->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <section class="contactMe" id="contactMe"><!--============== Contact Me ===============-->
+        <h2 class="contactMe-heading">
+            <span class="contactMe-heading-l">L</span>
+            <span class="contactMe-heading-centerArea">et's T</span>
+            <span class="contactMe-heading-alk">alk</span>
+        </h2>
+        <div class="contactMe-content">
+            <div class="contactMe-left">
+                <div class="contactMe-left-hi">Hi...</div>
+                <div class="contactMe-left-tellme">
+                    Tell me about your
+                    <br>
+                    Project
+                </div>
+                <div class="contactMe-left-address">
+                    Matugama , <br>
+                    Kalutara ,<br>
+                    Westen Provence , <br>
+                    Sri-Lanka .
+                </div>
+
+            </div>
+            <div class="contactMe-right">
+                <table>
+
+                    <tr><!--email-->
+                        <td>
+                            E-mail
+                        </td>
+                        <td>
+                            <a href="mailto:contact.yashen@gmail.com?&body=Hello%20Yashen%20,">contact.yashen@gmail.com</a>
+                        </td>
+                    </tr>
+
+                    <tr><!--whatsapp-->
+                        <td>
+                            Whatsapp
+                        </td>
+                        <td>
+                            <a href="https://wa.me/qr/U5I7HMANYZ3PP1" target="_blank">+94-711974973</a>
+                        </td>
+                    </tr>
+
+                    <tr><!--call-tp-->
+                        <td>
+                            Call to me
+                        </td>
+                        <td>
+                            <a href="tel:+94711974973">+94-711974973</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section><!--=====X======== Contact Me =======X=======-->
+
+</main><!-- ====X=========== Main Area ==========X==== -->
+
+
+<!----------------------------------------- Footer -------------------------------------------------------------------->
+
+<footer><!-- ========== Footer =============== -->
+    <div class="footer-wrapper">
+        <div class="footer-left">
+            <img src="./assets/img/logo-main.png" alt="logo" width="150px">
+        </div>
+        <div class="footer-right">
+            <div class="footer-right-name">Yashen Fernando</div>
+            <div class="footer-right-positions">
+                FULLSTACK-DEVELOPER &nbsp;| DEVOPS ENGINEER &nbsp;| UI/UX DESIGNER
+            </div>
+            <div class="footer-right-social-icons">
+                <div class="footer-right-social-icons-outer"><!--linkdin-->
+                    <div class="footer-right-social-icons-inner">
+                        <i class="#"></i>
+                    </div>
+                </div>
+
+                <div class="footer-right-social-icons-outer"><!--twitter-->
+                    <div class="footer-right-social-icons-inner">
+                        <i class="#"></i>
+                    </div>
+                </div>
+
+                <div class="footer-right-social-icons-outer"><!--github-->
+                    <div class="footer-right-social-icons-inner">
+                        <i class="#"></i>
+                    </div>
+                </div>
+
+                <div class="footer-right-social-icons-outer"><!--stackoverflow-->
+                    <div class="footer-right-social-icons-inner">
+                        <i class="#"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright-statement">
+                © Yashen Fernando 2023 All Rights Reserved
+            </div>
+        </div>
+    </div>
+</footer><!-- ===X========== Footer =========X======= -->
+
 </body>
+
 </html>
