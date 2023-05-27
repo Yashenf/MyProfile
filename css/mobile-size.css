@@ -1,0 +1,152 @@
+/*
+Styled by : @yash
+          4/30/2023 , Sunday
+          11:13 AM
+Project :MyProfile
+Contact : contact.yashen@gmail.com
+*/
+body{
+    width: 100vw;
+}
+
+:root{
+    --gold:#FEA609;
+    --dark-black:#21201E;
+    --light-black:#282A2D;
+}
+/* Media query for mobile screens */
+@media only screen and (max-width: 427px) {
+    /*-------  Home Page ---------------*/
+    .home-main-box-heading{
+        font-size: 22px;
+    }
+
+    .home-right-side{
+        background-image: url("../assets/img/owl.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home-left-side{
+        display: none;
+    }
+
+    .home-main-box-heading-jobTitle{
+        color: #591D13;
+    }
+
+    .home-main-box-heading-name{
+        font-size: 36px;
+    }
+
+    .home-main-box-heading-a{
+        font-size: 20px;
+    }
+    .home-main-box-heading-jobTitle{
+        font-size: 24px;
+    }
+
+    .home-main-box-description{
+        font-size: 14px;
+        font-weight: normal;
+    }
+    /*---X----  Home Page ---------X----*/
+
+    /*------ Education -------------*/
+
+    .academic-row{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+    .doted-line{
+        display: none;
+    }
+    .academic-icon-outer{
+        width: 60px;
+        height: 60px;
+    }
+    .academic-icon-inner{
+        width: 58px;
+    }
+    .academic-row-iconBox{
+        margin-bottom: 12px;
+    }
+    .academic-row-leftBox{
+        margin-bottom: 12px;
+    }
+    .academic-row-rightBox{
+        padding: 10px;
+    }
+    /*----X---- Education -----X------*/
+
+
+    /*-------- Contact me -------------*/
+    .hi0text>div{
+        font-size: 24px;
+    }
+
+    .contactMe-left-address{
+        font-size: 12px;
+    }
+
+    .contactMe-right>div>p,.contactMe-right>div>a{
+        font-size: 16px;
+    }
+    /*--X----- Contact me ----------X--*/
+
+    /*------- footer ----------*/
+
+    .deploy>p{
+        font-size: 8px;
+    }
+    .aws-logo{
+        width: 100px;
+        height: 70px;
+    }
+
+    .footer-left>img{
+        width:90px;
+    }
+
+    .footer-right-name{
+        font-size: 12px;
+    }
+
+    .footer-right-positions{
+        font-size: 8px;
+    }
+
+    .footer-right-social-icons{
+        width: 40%;
+        height: 60px;
+    }
+
+    .footer-right-social-icons-outer{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid white;
+        background-color: var(--gold);
+    }
+
+    .footer-right-social-icons-inner {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-right-social-icons-inner>a{
+        font-size: 12px;
+    }
+
+    .footer-copyright-statement{
+        font-size: 10px;
+    }
+    /*----X-- footer ------X---*/
+}
+
+
+

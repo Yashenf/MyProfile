@@ -1,0 +1,1076 @@
+/*
+Styled by : @yash
+          3/7/2023 , Tuesday
+          11:12 PM
+Project :MyProfile
+Contact : contact.yashen@gmail.com
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;;
+}
+
+:root {
+    --gold: #FEA609;
+    --dark-black: #21201E;
+    --light-black: #282A2D;
+}
+
+body::-webkit-scrollbar{
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--light-black);
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: var(--gold);
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: white;
+    width: fit-content;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*-------preloader--------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black; /* Adjust the background color as needed */
+    z-index: 9999; /* Ensure the preloader stays on top */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#countdown {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white; /* Adjust the text color as needed */
+    margin-top: 10px;
+    animation: countdownAnimation 1.5s linear infinite;
+}
+@keyframes countdownAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*----X--preloader--X-----*/
+
+/*-----------header---------*/
+header {
+    height: 10vh;
+    width: 100%;
+    background-color: #21201E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.site-logo {
+    width: 20%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+/*.hamburger {
+    display: none;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}*/
+.menu-icon{
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+    border-color: #FEA609;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item > a:hover {
+    color: #FEA609;
+}
+
+.my-resume-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid #FEA609;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-resume-btn:hover {
+    background-color: #FEA609;
+    border-color: transparent;
+}
+
+.my-resume-btn > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+/*-----X----------header-------X--------*/
+
+/* ---------------   Main Area ------------------- */
+main {
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+/*  Particle */
+/*.large-header {*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    !*background: #333;*!*/
+/*    overflow: hidden;*/
+/*    background-size: cover;*/
+/*    background-position: center center;*/
+/*    z-index: 1;*/
+/*}*/
+/*  Particle */
+
+/*--------------- Home Section -------------------*/
+#home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-black);
+    display: flex;
+    justify-content: space-between;
+}
+.home-right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home-left-side{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.owl{
+    width: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("../assets/img/owl.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-main-heading-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 10vw;
+}
+
+.home-main-box-heading {
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.home-main-box-heading-a {
+    font-size: 50px;
+}
+
+.home-main-box-heading-jobTitle {
+    color: var(--gold);
+}
+
+.home-main-box-description {
+
+}
+
+.home-main-box-heading-name {
+    color: white;
+    display: inline;
+    font-size: 90px;
+    font-weight: bolder;
+}
+
+.home-main-box-description {
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.sayHello{
+
+}
+
+
+.sayHello >a {
+    width: 150px;
+    height: 50px;
+    color: var(--light-black);
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10vw;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gold);
+}
+.sayHello >a:hover{
+    background-color: var(--gold);
+    color: white;
+    border-color: white;
+}
+/*-----X--------- Home Section -----------X-------*/
+
+/*-------------  About Section ___________________*/
+#aboutMe {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-black);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutMe-left-side {
+    width: 30%;
+}
+
+.aboutMe-profilePic-outer {
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    border: 5px solid var(--gold);
+}
+
+.aboutMe-profilePic-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("../assets/img/my_profile_image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutMe-right-side {
+    flex: 0.75;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aboutMe-right-side-name {
+    color: var(--gold);
+    font-size: 48px;
+}
+
+.aboutMe-right-side-description {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.social_meadia_and_blog {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 6vh;
+}
+
+.aboutMe-socialMediaLink-list {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutMe-socialMediaLink {
+    width: 46px;
+    height: 46px;
+    background-color: var(--gold);
+    border: 3px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    transition: all 0.5s;
+}
+
+.aboutMe-socialMediaLink:hover {
+    transform: rotate(360deg)scale(1.3);
+}
+
+.aboutMe-socialMediaLink>a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 2px;
+}
+
+.aboutMe-right-side-myBlogBtn{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.aboutMe-right-side-myBlogBtn:hover{
+    background-color: white;
+    border: 1px solid var(--gold);
+}
+
+.aboutMe-right-side-myBlogBtn>a{
+    text-decoration: none;
+    color: black;
+}
+
+/*-----X-------  About Section ___________X_______*/
+
+
+/*--------------   What I Do Section -------------*/
+
+#whatIDo{
+    width: 100%;
+    height: auto;
+    padding-top: 16vh;
+    background-color: var(--dark-black);
+}
+
+.whatIDo-heading{
+    text-align: center;
+    font-size: 32px;
+}
+
+.what{
+    color: white;
+}
+
+.i-do{
+    color: var(--gold);
+}
+
+.whatIDo-slider-item{
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatIDo-slider-container{
+    margin-top: 40px;
+}
+
+.whatIDo-inner{
+    width: 90%;
+    height: 400px;
+    border: 3px solid var(--gold);
+    border-radius: 12px;
+    background-color: var(--light-black);
+    position: relative;
+    transition: all 0.5s;
+}
+
+.whatIDo-slider-item-image{
+    width: 80px;
+    height: 80px;
+    background-color: var(--gold);
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    /*color: black;*/
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatIDO-slider-item-textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.whatIDo-inner:hover{
+    transform: scale(1.05);
+}
+
+.whatIDO-slider-item-textBox-heading{
+    font-size: 20px;
+    color: var(--gold);
+}
+
+.whatIDO-slider-item-textBox-experience{
+    color: white;
+    font-size: 16px;
+    margin-top: 36px;
+}
+
+.whatIDO-slider-item-textBox-completedProjects{
+    color: white;
+    font-size: 16px;
+}
+/*------X-------   What I Do Section --------X----*/
+
+/*----------------  Education --------------------*/
+#academic{
+    width: 100%;
+    height: auto;
+    padding-top: 16vh;
+    background-color: var(--light-black);
+    padding-bottom: 20px;
+}
+.academic-life{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.academic-heading{
+    font-size: 32px;
+    color: var(--gold);
+}
+.life{
+    font-size: 32px;
+    color: white;
+}
+.academic-page-wrapper{
+    width: 100%;
+    height: auto;
+}
+.academic-row{
+    height: 200px;
+    border-radius: 12px;
+    /*border: 1px solid var(--gold);*/
+    margin-top: 20px;
+
+    -webkit-box-shadow: 5px 6px 17px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 6px 17px -5px rgba(0,0,0,0.75);
+    box-shadow: 5px 6px 17px -5px rgba(0,0,0,0.75);
+}
+.academic-row-iconBox{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.academic-icon-outer{
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gold);
+}
+.academic-icon-inner{
+    width: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.doted-line{
+    width: 1px;
+    height: 30%;
+    border: 2px dashed white;
+}
+.academic-row-leftBox{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.academic-title{
+    color: var(--gold);
+    font-size: 20px;
+}
+.academic-institute{
+    font-size: 16px;
+    color: white;
+}
+.academic-year{
+    font-size: 12px;
+    color: white;
+}
+.academic-row-rightBox{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.academic-description{
+    color: white;
+    text-align: justify;
+}
+/*------X---------  Education --------------X-----*/
+
+/*----------------  mySkills  -----------------*/
+#mySkills{
+    width: 100%;
+    height: auto;
+    padding-top: 16vh;
+    background-color: var(--dark-black);
+}
+.mySkills-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mySkills-heading-techStack{
+    font-size: 32px;
+    color: var(--gold);
+}
+.mySkills-heading-my{
+    font-size: 32px;
+    color: white;
+}
+.mySkills-slider-item-outer{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.mySkills-slider-item-inner{
+    width: 80%;
+    height: 100%;
+    border: 2px solid var(--gold);
+    background-color: var(--light-black);
+    border-radius: 20px;
+    box-shadow: 10px 15px 12px -4px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 10px 15px 12px -4px rgba(0,0,0,0.77);
+    -moz-box-shadow: 10px 15px 12px -4px rgba(0,0,0,0.77);
+
+    animation: color-change 2s linear infinite;
+}
+
+@keyframes color-change {
+    0%,100%{
+        border-color: var(--gold);
+    }
+
+    25%{
+        border-color: #EE964B;
+    }
+
+    50%{
+        border-color: #EBEBD3;
+    }
+
+    75%{
+        border-color: #F4D35E;
+    }
+
+    85%{
+        border-color: #EE964B;
+    }
+}
+
+.mySkills-slider-item-image{
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.frontend-image-box{
+    background-image: url("../assets/img/fe.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+.backend-image-box{
+    background-image: url("../assets/img/be.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+.tools-image-box{
+    background-image: url("../assets/img/tools.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+.mySkills-slider-item-skillsBox{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--gold);
+    font-weight: bold;
+    -webkit-text-stroke: 0.01px red;
+    margin-top: 8px;
+    line-height: 39;
+}
+.mySkills-slider-item-skillsBox-left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.mySkills-slider-item-skillsBox-right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+/*--------X-------  mySkills  -------------X---*/
+
+/*----------------  My Projects ---------------*/
+#myProjects{
+    width: 100%;
+    height: auto;
+    padding-top: 16vh;
+    background-color: var(--light-black);
+}
+
+.myProject-Heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.myProject-Heading-project{
+    font-size: 32px;
+    color: var(--gold);
+}
+.myProject-Heading-my{
+    font-size: 32px;
+    color: white;
+}
+.myProjects-item-wrapper{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myProjects-item-inner{
+    width: 80%;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid var(--gold);
+}
+.myProjects-item-image{
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+    background-position: bottom;
+}
+.myProjects-item-image-shaddow{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    display: none;
+}
+.project01-img{
+    background-image: url("../assets/img/html-css-site.png");
+}
+.project02-img{
+    background-image: url("../assets/img/standalone.png");
+}
+.project03-img{
+    background-image: url("../assets/img/react-project.png");
+}
+.project04-img{
+    background-image: url("../assets/img/react-project.png");
+}
+.myProjects-item-heading{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.myProjects-item-descriptionBox{
+    width: 100%;
+    height: 60%;
+    font-size: 12px;
+    text-align: justify;
+    padding: 12px;
+    background-color: var(--dark-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    color: white;
+
+}
+.myProjects-item-descriptionBox>a{
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 12px;
+}
+.myProjects-item-descriptionBox>a>button{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--gold);
+    color: white;
+    margin-bottom: 12px;
+    background-color: var(--light-black);
+}
+
+.myProjects-item-descriptionBox>a>button:hover{
+    background-color: var(--gold);
+    color: black;
+}
+
+.project-btn-wrapper{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.see-more-project-btn{
+    width: 150px;
+    height: 60px;
+    border-radius: 12px;
+    border: 1px solid var(--gold);
+    background-color: var(--dark-black);
+    color: white;
+}
+
+.see-more-project-btn:hover{
+    color: black;
+    background-color: var(--gold);
+    border-color: white;
+}
+.more-project-1{
+    display: none;
+}
+/*-------X--------  My Projects --------X------*/
+
+/*------------- Contact  ---------------------*/
+#contactMe{
+    width: 100%;
+    height: auto;
+    padding-top: 16vh;
+    background-color: var(--dark-black);
+    padding-bottom: 50px;
+}
+.contactMe-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contactMe-heading-l,.contactMe-heading-alk{
+    font-size: 32px;
+    color: var(--gold);
+    margin: 0;
+    padding: 0;
+}
+.contactMe-heading-centerArea{
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.contactMe-content{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactMe-left{
+    width: 20%;
+    padding-left: 12px;
+}
+.contactMe-left-hi{
+    font-size: 48px;
+    font-weight: bolder;
+    color: white;
+}
+.contactMe-left-tellme{
+    font-size: 40px;
+    color: var(--gold);
+    font-weight: bold;
+}
+.contactMe-left-address{
+    margin-top: 30px;
+    color: #a6a6a6;
+}
+.contactMe-right{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    -webkit-box-shadow: 14px 17px 32px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 17px 32px 2px rgba(0,0,0,0.75);
+    box-shadow: 14px 17px 32px 2px rgba(0,0,0,0.75);
+}
+
+.contact-option{
+    width: 100%;
+    height: calc(100%/3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-option>p{
+    font-size: 18px;
+    width: fit-content;
+    display: inline;
+    color: white;
+}
+
+.link{
+    display: inline;
+}
+
+.link>a{
+    text-decoration: none;
+    color: white;
+}
+.link>a:hover{
+    color: #FEA609;
+}
+.map{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    -webkit-box-shadow: 14px 17px 32px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 17px 32px 2px rgba(0,0,0,0.75);
+    box-shadow: 14px 17px 32px 2px rgba(0,0,0,0.75);
+}
+.map>iframe{
+    width: 100%;
+    height: 100%;
+}
+/*-------X------ Contact  ----------------X----*/
+/* ---------------   Main Area ------------------- */
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: var(--light-black);
+}
+
+.footer-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.deploy{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.deploy>p{
+    color: var(--gold);
+    font-size: 14px;
+}
+.aws-logo{
+    width: 100px;
+    height: 100px;
+    background-image: url("../assets/img/aws-logo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-left>img{
+    width:120px;
+}
+
+.footer-right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-right-name{
+    color: white;
+    font-size: 20px;
+}
+
+.footer-right-positions{
+    color: white;
+    font-size: 14px;
+}
+
+.footer-right-social-icons{
+    width: 60%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-right-social-icons-outer{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: var(--gold);
+}
+.footer-right-social-icons-inner{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-right-social-icons-inner>a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--light-black);
+
+}
+
+.footer-copyright-statement{
+    color: #d7cccc;
+}
+
+.assignment-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid white;
+    background-color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.assignment-btn:hover {
+    background-color: white;
+    border-color: var(--gold);
+}
+
+.assignment-btn > a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+

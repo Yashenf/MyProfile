@@ -1,0 +1,250 @@
+/*
+Styled by : @yash
+          4/30/2023 , Sunday
+          11:14 AM
+Project :MyProfile
+Contact : contact.yashen@gmail.com
+*/
+
+body {
+    width: 100vw;
+}
+
+:root {
+    --gold: #FEA609;
+    --dark-black: #21201E;
+    --light-black: #282A2D;
+}
+
+/* Media query for tablet screens */
+@media only screen and (max-width: 1097px) {
+    nav {
+        position: absolute;
+        height: 60vh;
+        width: 90vw;
+        background-color: var(--light-black);
+        top: 10vh;
+        left: -90vw;
+    }
+
+    nav.active {
+        left: 0;
+        transition: all, 1s;
+    }
+    .menu-icon {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 8px;
+    }
+
+    .bar {
+        width: 100%;
+        height: 3px;
+        background-color: var(--gold);
+        margin: 3px 0;
+        transition: transform 0.3s ease;
+    }
+
+    .cross .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .cross .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .cross .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /*---X--------   ham icon --------X---*/
+
+    .nav-list {
+        height: 100%;
+        /*display: block;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-list > a {
+        font-size: 24px;
+    }
+
+    .nav-item {
+
+    }
+
+    /*.hamburger {
+        margin-right: 12px;
+        display: block;
+    }*/
+    .menu-icon{
+        display: block;
+    }
+
+    /*-------  Home Page ---------------*/
+    .home-main-box-heading {
+        font-size: 48px;
+    }
+
+    .home-main-box-heading-name {
+        font-size: 66px;
+    }
+
+    .home-right-side {
+        background-image: url("../assets/img/owl.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home-left-side {
+        display: none;
+    }
+    .home-main-box-heading-jobTitle{
+        color: #591D13;
+    }
+
+    /*---X----  Home Page ---------X----*/
+    /*--------- About Section ----------*/
+    #aboutMe {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-me-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 12vh;
+    }
+
+    .aboutMe-left-side {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutMe-profilePic-outer {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 4px solid var(--gold);
+    }
+
+    .aboutMe-right-side-name {
+        font-size: 40px;
+    }
+
+    .aboutMe-right-side-description {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .social_meadia_and_blog {
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 6vh;
+    }
+
+    .aboutMe-socialMediaLink {
+        width: 36px;
+        height: 36px;
+    }
+
+    .aboutMe-socialMediaLink-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .aboutMe-socialMediaLink > a {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .aboutMe-right-side-myBlogBtn {
+        width: 90vw;
+        height: 60px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutMe-right-side-myBlogBtn > a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /*---X----- About Section -----X----*/
+    /*------ Education -------------*/
+    .academic-row {
+        height: auto;
+
+    }
+
+    /*----X---- Education -----X------*/
+    /*-----------  Contact me ---------*/
+    .contactMe-content {
+        flex-direction: column;
+    }
+
+    .contactMe-left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .contactMe-right {
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    /*----X------  Contact me -----X---*/
+
+
+    /*-------footer------------*/
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-left{
+        width: 98vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .deploy{
+        width: 70%;
+        align-items: center;
+    }
+    .deploy>p{
+        font-size: 16px;
+    }
+    .aws-logo{
+        width: 200px;
+        height: 140px;
+    }
+    /*--X----footer-------X----*/
+}
