@@ -83,6 +83,11 @@ body{
     }
     /*----X---- Education -----X------*/
 
+    /*-----------  My Projects -------*/
+    .more-project-1,.more-project-2{
+        display: none;
+    }
+    /*----X------  My Projects ---X---*/
 
     /*-------- Contact me -------------*/
     .hi0text>div{

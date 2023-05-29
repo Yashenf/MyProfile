@@ -7,6 +7,7 @@
 */
 
 $(document).ready(()=>{
+    const name= localStorage.getItem('userName');
     $('.hamburger').click(()=>{
        $('nav').toggleClass('active');
        $('active').css({
@@ -15,8 +16,60 @@ $(document).ready(()=>{
     });
 
     //----- pre loader in class
-    x();
+   if (name) {
+       x(name);
+   }else{
+       getName();
+   }
 });
+
+
+/*--------------------------------------*/
+
+function getName() {
+    const popupContainer = $('#popup-container');
+    const nameInput = $('#name-input');
+    const submitButton = $('#submit-button');
+
+    // Show the popup when the page loads
+    popupContainer.show();
+
+    // Handle Enter key press event on the name input
+    nameInput.keypress((event) => {
+        if (event.which === 13) {
+            event.preventDefault(); // Prevent form submission
+            submitButton.focus(); // Set focus on the submit button
+        }
+    });
+
+    // Disable submit button if name input is empty
+    nameInput.on('input', () => {
+        const visitorName = nameInput.val().trim();
+        submitButton.prop('disabled', visitorName === '');
+    });
+
+    // Handle form submission
+    submitButton.click(() => {
+        const visitorName = nameInput.val().trim();
+
+        // Check if the input is empty
+        if (visitorName === '') {
+            alert('Please enter your name.');
+            return;
+        }
+
+        // Store the visitor's name or perform any desired action
+        // For this example, we'll just display an alert
+        localStorage.setItem('userName',visitorName);
+        // Hide the popup
+        popupContainer.hide();
+
+        // Call the x() method after name submission
+        x(visitorName);
+    });
+}
+
+/*--------------------------------------*/
 
 function toggleMenuIcon() {
     const menuIcon = document.querySelector('.menu-icon');
@@ -29,7 +82,7 @@ function toggleMenuIcon() {
 
 
 /*--------------  preloader -----------*/
-const x = function () {
+const x = function (name) {
     const preloader = $('#preloader');
     const countdown = $('#countdown');
     let count = 3;
@@ -43,6 +96,7 @@ const x = function () {
             preloader.css('display','none');
         }
     }, 1500);
+    $('#visiterName').text(name);
 };
 
 function getNumberWord(number) {
@@ -62,17 +116,24 @@ function getNumberWord(number) {
 const showMoreProjects= ()=>{
     if ($('.see-more-project-btn').text() === 'See more'){
         $('.see-more-project-btn').text('Show less');
-        $('.more-project-1').css({
+        $('.more-project-1,.more-project-2').css({
             'display':'block',
-            'transition':'display 2s',
-            'margin-left':'35px'
+            'transition':'display 2s'
         });
     }else {
         $('.see-more-project-btn').text('See more');
-        $('.more-project-1').css({
-            'display':'none',
-            'transition':'2s'
-        });
+        if(window.matchMedia('(max-width: 1097px)').matches && window.matchMedia('(min-width: 428px)').matches){
+            $('.more-project-1').css({
+                'display':'none',
+                'transition':'2s'
+            });
+        }else{
+            $('.more-project-1,.more-project-2').css({
+                'display':'none',
+                'transition':'2s'
+            });
+        }
+
     }
 }
 
@@ -88,17 +149,13 @@ window.onscroll = function() {
     prevScrollPos = currentScrollPos;
 };
 
-$('.myProjects-item-description').on('mouseenter',(e)=>{
-    $('.myProjects-item-image-shaddow').css({
-        'display':'block'
+$('.myProjects-item-inner').on("mouseenter", function() {
+    $(this).find('.myProjects-item-image-shaddow').css({
+        display: 'block'
     });
-    console.log(e.target.classList);
-    console.log(e.target.id);
-});
-
-$('.myProjects-item-description').on('mouseleave',()=>{
-    $('.myProjects-item-image-shaddow').css({
-        'display':'none'
+}).on("mouseleave", function() {
+    $(this).find('.myProjects-item-image-shaddow').css({
+        display: 'none'
     });
 });
 

@@ -200,6 +200,21 @@ body {
     }
 
     /*----X---- Education -----X------*/
+
+
+    /*--------projects -------*/
+    /*.myProjects-item-wrapper{
+        margin-left: 0;
+    }*/
+    .more-project-1,.more-project-2{
+        /*padding-left: 35px;*/
+    }
+    .more-project-1{
+        display: block;
+    }
+    /*--------projects -------*/
+
+
     /*-----------  Contact me ---------*/
     .contactMe-content {
         flex-direction: column;
@@ -243,8 +258,8 @@ body {
         font-size: 16px;
     }
     .aws-logo{
-        width: 200px;
-        height: 140px;
+        width: 150px;
+        height: 100px;
     }
     /*--X----footer-------X----*/
 }

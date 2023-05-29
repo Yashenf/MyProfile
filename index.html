@@ -53,6 +53,19 @@
 
 <body>
 
+
+<!---------------------------------  POP UP Input Model ------------------------------------------------>
+<div id="popup-container">
+    <div id="popup">
+        <small>Hey dude, i'm yash.</small> <br>
+        <h4>Whats Your Name?</h4>
+        <input type="text" id="name-input" placeholder="yashen" />
+        <button id="submit-button">GO !</button>
+    </div>
+</div>
+<!--------------X------------------  POP UP Input Model --------------------------------------X--------->
+
+
 <!-----------------  preloader ----------------------->
 <div id="preloader">
     <div id="countdown"></div>
@@ -113,7 +126,6 @@
     </nav>
 
 </header>
-
 <!------------------------------------------ Main --------------------------------------------------------------------->
 
 <main><!-- =========== Main Area ========== -->
@@ -122,7 +134,7 @@
         <div class="home-right-side">
             <div class="home-main-heading-box">
                 <h2 class="home-main-box-heading">
-                    Hey There , <br> I’m
+                    Hey <span id="visiterName">There</span> , <br> I’m
                     <span class="home-main-box-heading-name">Yashen Fernando</span> <br>
                     <span class="home-main-box-heading-a">a</span>
                     <span class="home-main-box-heading-jobTitle"></span>
@@ -157,7 +169,7 @@
 
             <div class="aboutMe-right-side">
                 <div class="aboutMe-right-side-name" data-aos="fade-right">
-                    <h2>Hi ' I'm Yashen</h2>
+                    <h2><span id="aboutMe-name">Hi ' I'm</span> Yashen Savindu Fernando.</h2>
                 </div>
                 <div class="aboutMe-right-side-description" data-aos="fade-left">
                     As a passionate software engineer, I am dedicated to creating innovative solutions and pushing the
@@ -177,16 +189,19 @@
         <div class="social_meadia_and_blog" data-aos="flip-left">
             <div class="aboutMe-socialMediaLink-list">
                 <div class="aboutMe-socialMediaLink">
-                    <a href="https://www.linkedin.com/in/yashen-fernando-62b86023a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/yashen-fernando-62b86023a/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <div class="aboutMe-socialMediaLink">
                     <a href="https://github.com/Yashenf" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <div class="aboutMe-socialMediaLink">
-                    <a href="https://stackoverflow.com/users/19007171/yashen-fernando" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+                    <a href="https://stackoverflow.com/users/19007171/yashen-fernando" target="_blank"><i
+                            class="fa-brands fa-stack-overflow"></i></a>
                 </div>
                 <div class="aboutMe-socialMediaLink">
-                    <a href="https://instagram.com/imyashen?igshid=ZGUzMzM3NWJiOQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://instagram.com/imyashen?igshid=ZGUzMzM3NWJiOQ==" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
             <div class="aboutMe-right-side-myBlogBtn">
@@ -432,6 +447,7 @@
                     <!--project 01-->
                     <div class="myProjects-item-inner">
                         <div class="myProjects-item-image project01-img">
+                            <div class="myProjects-item-image-shaddow"><p>HTML5 + CSS3</p></div>
                         </div>
                         <div class="myProjects-item-descriptionBox">
                             <h2 class="myProjects-item-heading">
@@ -479,7 +495,9 @@
 
                 <div class="myProjects-item-wrapper col-12 col-sm-6 col-lg-4" data-aos="zoom-out-left"><!--project 03-->
                     <div class="myProjects-item-inner">
-                        <div class="myProjects-item-image project03-img"></div>
+                        <div class="myProjects-item-image project03-img">
+                            <div class="myProjects-item-image-shaddow"><p>React {JS}</p></div>
+                        </div>
                         <div class="myProjects-item-descriptionBox">
                             <h2 class="myProjects-item-heading">
                                 Facebook Clone
@@ -498,29 +516,52 @@
                     </div>
                 </div>
 
-                <div class="myProjects-item-wrapper col-12 col-sm-6 col-lg-4 more-project-1" data-aos="zoom-out-right">
-                    <!--project 04-->
+                <div class="myProjects-item-wrapper col-12 col-sm-6 col-lg-4 more-project-1" data-aos="zoom-out-left"><!--project 03-->
                     <div class="myProjects-item-inner">
-                        <div class="myProjects-item-image project04-img"></div>
+                        <div class="myProjects-item-image project04-img">
+                            <div class="myProjects-item-image-shaddow"><p>Node + Express</p></div>
+                        </div>
                         <div class="myProjects-item-descriptionBox">
                             <h2 class="myProjects-item-heading">
-                                Facebook Clone
+                                Student Management System
                             </h2>
                             <p class="myProjects-item-description">
-                                I've learned JavaScript arrow functions, npm, React components, and basic React
-                                concepts. Arrow
-                                functions help write efficient code, npm makes package management easier, and React
-                                components
-                                enable modularity and code usability.
-
+                                In this project, I learned Node.js and the Express framework. I gained knowledge on
+                                running JavaScript outside of the browser and working with HTTP, handling requests, and
+                                managing responses.
                             </p>
                             <a href="#" class="myProjects-item-btn">
                                 <button>Open Via Github</button>
                             </a>
-
                         </div>
                     </div>
                 </div>
+
+                <div class="myProjects-item-wrapper col-12 col-sm-6 col-lg-4 more-project-2" data-aos="zoom-out-left"><!--project 03-->
+                    <div class="myProjects-item-inner">
+                        <div class="myProjects-item-image project05-img">
+                            <div class="myProjects-item-image-shaddow"><p>Spring MVC</p></div>
+                        </div>
+                        <div class="myProjects-item-descriptionBox">
+                            <h2 class="myProjects-item-heading">
+                                POS System - Spring, Java EE
+                            </h2>
+                            <p class="myProjects-item-description">
+
+                                focused on Java EE and Spring. understanding its concepts and components. Additionally, I learned about Spring
+                                Inversion of Control and its ability to manage dependencies. Exploring further, I
+                                gained insights into Spring MVC, which facilitates building web applications, and Spring
+                                Security.
+                            </p>
+                            <a href="#" class="myProjects-item-btn">
+                                <button>Open Via Github</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             </div>
         </div>
         <div class="project-btn-wrapper">
@@ -608,13 +649,15 @@
             <div class="footer-right-social-icons">
                 <div class="footer-right-social-icons-outer"><!--linkdin-->
                     <div class="footer-right-social-icons-inner">
-                        <a href="https://www.linkedin.com/in/yashen-fernando-62b86023a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/yashen-fernando-62b86023a/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
                 <div class="footer-right-social-icons-outer"><!--twitter-->
                     <div class="footer-right-social-icons-inner">
-                        <a href="https://instagram.com/imyashen?igshid=ZGUzMzM3NWJiOQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://instagram.com/imyashen?igshid=ZGUzMzM3NWJiOQ==" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
 
@@ -626,7 +669,8 @@
 
                 <div class="footer-right-social-icons-outer"><!--stackoverflow-->
                     <div class="footer-right-social-icons-inner">
-                        <a href="https://stackoverflow.com/users/19007171/yashen-fernando" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+                        <a href="https://stackoverflow.com/users/19007171/yashen-fernando" target="_blank"><i
+                                class="fa-brands fa-stack-overflow"></i></a>
                     </div>
                 </div>
             </div>
