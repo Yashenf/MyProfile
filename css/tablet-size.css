@@ -111,6 +111,10 @@ body {
         color: #591D13;
     }
 
+    .owl{
+        display: block;
+    }
+
     /*---X----  Home Page ---------X----*/
     /*--------- About Section ----------*/
     #aboutMe {

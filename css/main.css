@@ -294,6 +294,7 @@ main {
     background-image: url("../assets/img/owl.png");
     background-size: cover;
     background-position: center;
+    display: none;
 }
 
 .home-main-heading-box {
